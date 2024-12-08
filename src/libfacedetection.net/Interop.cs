@@ -27,6 +27,17 @@ namespace LibFaceDetection
             public int x, y;
             public int width, height;
             public float confidence;
+            
+            public int p1x;
+            public int p1y;
+            public int p2x;
+            public int p2y;
+            public int p3x;
+            public int p3y;
+            public int p4x;
+            public int p4y;
+            public int p5x;
+            public int p5y;
         }
     }
 }

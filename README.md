@@ -31,6 +31,20 @@ The *CnnFaceDetected* object contains also a **Confidence** property. You can us
 
 Please note that **original bitmap is converted internally in BGR format**, thus after *Detect* call, your original bitmap will be compromised. Do not use it for further operations.
 
+## Build
+```bash
+cd native
+mkdir build
+cd build
+cmake ..
+```
+then use 'Visual stuido 20xx' open solution in build folder to build libfacedetection.dll
+
+## Face Landmark Position
+p1, p2: eye left/right \
+p3: nose \
+p4, p5: mouse left/right \
+
 ## Performances
 For a better performance keep an instance of **CnnFaceDetector** for multiple usage, but please note that the class is not thread safety. **Do not use it concurrently** from multiple threads. You can use [ObjectPool<T>](https://docs.microsoft.com/dotnet/api/microsoft.extensions.objectpool.objectpool-1) available into *Microsoft.Extensions.ObjectPool* package to create a pool of available *CnnFaceDetector* instances. Please checkout a [sample here](tree/master/samples/AzureFunction).
 

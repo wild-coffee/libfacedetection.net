@@ -15,6 +15,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/Ricciolo/libfacedetection.net</PackageProjectUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,6 +35,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\native\build\libfacedetection.vcxproj" />
   </ItemGroup>
 
 </Project>
